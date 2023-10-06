@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>Sampler</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Sampler_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>e6d48086</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>Sampler_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>e6d48086</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>06215c5b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5588d1b8</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>samples_tb</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>743bbea3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>daddr_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">6</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>den_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>di_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>do_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>drdy_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dwe_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>channel_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>eoc_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>alarm_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>eos_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>busy_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dclk_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>outputreg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_OUT_WIDTH</spirit:name>
+        <spirit:displayName>C Out Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUT_WIDTH">6</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_AVG_COUNT</spirit:name>
+        <spirit:displayName>C Avg Count</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AVG_COUNT">16</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_884121e1</spirit:name>
+      <spirit:enumeration>2</spirit:enumeration>
+      <spirit:enumeration>4</spirit:enumeration>
+      <spirit:enumeration>8</spirit:enumeration>
+      <spirit:enumeration>16</spirit:enumeration>
+      <spirit:enumeration>32</spirit:enumeration>
+      <spirit:enumeration>64</spirit:enumeration>
+      <spirit:enumeration>128</spirit:enumeration>
+      <spirit:enumeration>256</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/Sampler_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_e6d48086</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/Sampler_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/data/Sampler.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/data/Sampler.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/src/Sampler.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/src/Sampler.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/Sampler_v1_0/src/Sampler_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/Sampler_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_5588d1b8</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/samples_tb.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Sample XADC DRP and write to a 6-bit wide register</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Sampler_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_OUT_WIDTH</spirit:name>
+      <spirit:displayName>C Out Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_OUT_WIDTH">6</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_AVG_COUNT</spirit:name>
+      <spirit:displayName>C Avg Count</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_AVG_COUNT" spirit:choiceRef="choice_list_884121e1">16</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/Video_&amp;_Image_Processing</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>Sampler_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>20</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-10-06T22:14:45Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@296bc33b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@249dd1f2_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ae7e529_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@602242c7_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40d8eb16_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58729da3_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@dd23b4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68a560fc_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54dd3bc0_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52fd141e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@421af711_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54beaf7b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42f2d454_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7507ebb7_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60d0a65d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@734fe66e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@679bd7c8_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3730ce81_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d5d68e5_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d46b606_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e31744c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1aecb3d4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b4fb6c5_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6093999a_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2fb97159_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6def14e2_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e52d2b1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@308265b9_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b2b961e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@604a1201_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77e3b474_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24837a77_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53cd7cb_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55ef522e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38db0389_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50ffc794_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@507094ca_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22308493_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61a05ddb_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24166ffb_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ca02a3c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ef3598d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e82373d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a50c09c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58de7af3_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@bb99f67_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a5e7e22_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50488da_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@494f73f_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@84a66bc_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@477b5652_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3b9b2a47_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ba145cf_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38f7a9c6_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4635f28b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e1ab435_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26d8b767_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44503de6_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@676b5f0e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f451ca1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60e0416c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ec6e61d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6bc35817_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4035f036_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@21411395_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ce4c1f6_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5246c535_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@def2a2b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32ee8dc5_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f0f9d1e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3046b92b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2d32ab69_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c1bebfc_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d3d6564_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3afea3d0_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@28120046_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@604740e0_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@755b27af_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e0ee52a_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@25119efa_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59d03748_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4af24dbd_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6edbbc54_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@170831e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67d4a5f0_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38af23e1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@778216c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3f4114be_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@315e138b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@87ab767_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e7c5855_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79e635d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d882446_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57554ddd_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2cd3145f_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a3d8072_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@235006cb_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10c067d1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f863ee4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b603e1d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@520d293e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ebb3340_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@71c7a58e_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4db79105_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4df7c68d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64278fb2_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3978db9d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d1b4bc8_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@304c0e94_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24834fe2_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4260fc42_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3408e473_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65493516_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@16d60f42_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@414a6ffc_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37debe5c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@660a330c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d61c520_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9cf9fed_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4b8327b1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@591ada36_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74d77f09_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ab03774_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d69ce64_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2eda3b88_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e5bdbba_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b8e414c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6115eb7d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d705ee4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@122044d0_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5670ec3b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47c34416_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2920f006_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b4e925d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6516feaf_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b352838_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@682e0b67_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65b8f65c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7dd93b3_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27ab26a9_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f4edf09_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2592f33b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2af23874_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@734e32e4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c593d7a_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63335f70_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69692303_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61e98c28_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@70cc576b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ec1b6b5_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7b176b00_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22f02345_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41994e58_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77c84ad9_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11fdc369_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3de7e700_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17c5772b_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7935590d_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26215d6c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19372346_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fcc2192_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7102c6dd_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6287eb51_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3ef83608_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7cb1d436_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@62bd1f41_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@59bd93b9_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@dfc57e3_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58762f95_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e61946_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61ef480c_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d23ebd9_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d634bdf_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d22125a_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@30099605_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44b2bf1f_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37817050_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@81794ce_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@63f445a_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51da5436_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a641543_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2278ba84_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@651e05f1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@440f5ba4_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5cbf83e6_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@575a1b03_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ef4d7cd_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@480255d1_ARCHIVE_LOCATION">f:/Projects/EE_Projects/ip_repo/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5aa94a13_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@750e0685_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f528633_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9633ae4_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8b76cb4_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@61679bac_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2177773d_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d61d205_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4611f08a_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c534b0b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f76a8c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@535a0f39_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64343f1c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2084fa14_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9cb9dab_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5af90c93_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44ae71e0_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f40c4fe_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1cea60f3_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f6dae9d_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@484fa3d7_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5acbb21c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2aae04a6_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@512cbae7_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@20784c0c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c73753f_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6361fc6c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51d1ea99_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@127e64b0_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72ab0daf_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7918778d_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@170d1109_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5adc6a07_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a7fbe32_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79f821fb_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52e2d022_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74bd67be_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ba375f5_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2dbec557_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@67438d36_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4794997f_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@699e61e4_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@157ed322_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@440759b3_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c5485b3_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3cfbbe80_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c5619e5_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fa45346_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2960cb7b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d5ce335_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f98f5f_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bfe6589_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@767fe129_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ed1e9f5_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e35f5af_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2269386e_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35fd7f8c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c93b330_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5bedb810_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7de4c16_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36fd89cc_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a16ac31_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e080136_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40b6a299_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1dc443a_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@675d5f08_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bf87c0d_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47cf6985_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12467c3f_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1941d37_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@669a84bd_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1efdff2c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24f4a83b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e037a36_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f849fb0_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f2eebe_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a459e18_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6d51d114_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42791186_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60a29604_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@44461760_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c422c50_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7eae2a87_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3dbe312b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@13eac1ca_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3e9a9714_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35d007a3_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75a65b74_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1edfdac4_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64954b86_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5459dd45_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@12be0686_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1892366f_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ea7eba2_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e77b4a6_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66a83acf_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@41f04087_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@45ae15be_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1220910d_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a0ff940_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ede23e7_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@464a9764_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@58010fff_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@76b80df2_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ba0f60_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@56bcc81c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@74d48d06_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19a1eba7_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@787d8c36_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65b5d572_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@691a8437_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b91caa8_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5011200b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d792e08_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d07b2ab_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60e3e1b2_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6564f4cd_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a1d6fe8_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6362ec37_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@170e6655_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66a4e717_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6deb4685_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6420463e_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5d0396d4_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@50d52cc2_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7214a779_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c90ecaf_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@312768d3_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38dcb175_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2f4c9f97_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b1f204a_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54fa2d05_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@793a3f29_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a7080d0_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51f67dff_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46b5d280_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@412e39ff_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@72fd916c_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f5acb23_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@468e4bcf_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d7ff586_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5725ea93_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@545a2b10_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7982f386_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26e5035b_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@314cc1bf_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@49fcf663_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7d824e57_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@df207e0_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c6e90c8_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@511dafb_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8234a31_ARCHIVE_LOCATION">f:/Repos/Zybo-PL-ADC/custom_ip/Sampler_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="870e4a79"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="95f5b07d"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="75a5be79"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7a07a169"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
