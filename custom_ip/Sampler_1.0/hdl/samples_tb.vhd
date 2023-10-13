@@ -40,27 +40,28 @@ architecture Behavioral of samples_tb is
 
 component Sampler_v1_0 is
 	generic (
-	   C_OUT_WIDTH : integer := 6;
+	   C_OUT_WIDTH : integer := 12;
 	   C_AVG_COUNT : integer := 16
 	);
 	port (
-		daddr_out     : out std_logic_vector(6 downto 0);
-		den_out       : out std_logic;
-		di_out        : out std_logic_vector(15 downto 0);
-		do_in         : in std_logic_vector(15 downto 0);
-		drdy_in       : in std_logic;
-		dwe_out       : out std_logic;
+		daddr_out : out std_logic_vector(6 downto 0);
+		den_out : out std_logic;
+		di_out : out std_logic_vector(15 downto 0);
+		do_in : in std_logic_vector(15 downto 0);
+		drdy_in : in std_logic;
+		dwe_out : out std_logic;
 		
-		channel_in    : in std_logic_vector(4 downto 0);
-		eoc_in        : in std_logic;
-		alarm_in      : in std_logic;
-		eos_in        : in std_logic;
-		busy_in       : in std_logic;
+		channel_in : in std_logic_vector(4 downto 0);
+		eoc_in : in std_logic;
+--		alarm_in: in std_logic;
+--		eos_in : in std_logic;
+		busy_in : in std_logic;
 		
-		dclk_in       : in std_logic;
-		rst_in        : in std_logic;
+		dclk_in : in std_logic;
+		rst_in : in std_logic;
 		
-		outputreg : out std_logic_vector(C_OUT_WIDTH - 1 downto 0)
+		outputreg : out std_logic_vector(C_OUT_WIDTH - 1 downto 0);
+		drdy_out : out std_logic
 		
 	);
 	
@@ -70,8 +71,8 @@ end component Sampler_v1_0;
 
 constant C_T_CLK_PERIOD_NS         : time := (1000000000 / 130000000) * 1 ns;
 constant C_T_CLK_HALF_NS         : time := (C_T_CLK_PERIOD_NS / 2);
-constant C_TB_OUT_WIDTH     : integer := 6;
-constant C_TB_AVG_COUNT     : integer := 64;
+constant C_TB_OUT_WIDTH     : integer := 12;
+constant C_TB_AVG_COUNT     : integer := 128;
 
 signal s_daddr_out          : std_logic_vector(6 downto 0);
 signal s_den_out            : std_logic;
@@ -95,16 +96,16 @@ signal clk_counter : integer := 0;
 signal sample_counter : integer := 0;
 signal dataout : std_logic_vector(11 downto 0) := (others => '0');
 
-constant C_ARRAY_SIZE : integer := 16;
+constant C_ARRAY_SIZE : integer := 128;
 type samplearray is array(0 to C_ARRAY_SIZE-1) of integer;
 function initsamplearray return samplearray is
     variable asdf : samplearray;
 begin
     for i in 0 to (C_ARRAY_SIZE/2) -1 loop
-        asdf(i) := i*10;
+        asdf(i) := i*(C_ARRAY_SIZE/2);
     end loop;
     for i in (C_ARRAY_SIZE/2) to  C_ARRAY_SIZE-1 loop
-        asdf(i) := (C_ARRAY_SIZE - i)*10;
+        asdf(i) := (C_ARRAY_SIZE - i)*(C_ARRAY_SIZE/2) - 1;
     end loop;
     return asdf;
 end function initsamplearray;
@@ -130,8 +131,6 @@ dut : Sampler_v1_0
         dwe_out    => s_dwe_out,   
         channel_in => s_channel_in,
         eoc_in     => s_eoc_in,     
-        alarm_in   => s_alarm_in,   
-        eos_in     => s_eos_in,     
         busy_in    => s_busy_in,   
         dclk_in    => s_dclk_in,    
         rst_in     => s_rst_in     

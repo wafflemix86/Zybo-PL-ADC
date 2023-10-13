@@ -13,6 +13,7 @@
     "design_tree": {
       "xadc_wiz_0": "",
       "clk_wiz_0": "",
+      "xlslice_0": "",
       "Sampler_0": ""
     },
     "ports": {
@@ -78,8 +79,8 @@
     "components": {
       "xadc_wiz_0": {
         "vlnv": "xilinx.com:ip:xadc_wiz:3.3",
-        "xci_name": "design_1_xadc_wiz_0_1",
-        "xci_path": "ip\\design_1_xadc_wiz_0_1\\design_1_xadc_wiz_0_1.xci",
+        "xci_name": "design_1_xadc_wiz_0_0",
+        "xci_path": "ip\\design_1_xadc_wiz_0_0\\design_1_xadc_wiz_0_0.xci",
         "inst_hier_path": "xadc_wiz_0",
         "parameters": {
           "ACQUISITION_TIME": {
@@ -179,14 +180,34 @@
           }
         }
       },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "design_1_xlslice_0_0",
+        "xci_path": "ip\\design_1_xlslice_0_0\\design_1_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "5"
+          },
+          "DIN_WIDTH": {
+            "value": "12"
+          },
+          "DOUT_WIDTH": {
+            "value": "6"
+          }
+        }
+      },
       "Sampler_0": {
-        "vlnv": "xilinx.com:user:Sampler:1.0",
+        "vlnv": "xilinx.com:user:Sampler:1.1",
         "xci_name": "design_1_Sampler_0_0",
         "xci_path": "ip\\design_1_Sampler_0_0\\design_1_Sampler_0_0.xci",
         "inst_hier_path": "Sampler_0",
         "parameters": {
           "C_AVG_COUNT": {
             "value": "8"
+          },
+          "C_OUT_WIDTH": {
+            "value": "12"
           }
         }
       }
@@ -210,6 +231,12 @@
           "xadc_wiz_0/di_in"
         ]
       },
+      "Sampler_0_drdy_out": {
+        "ports": [
+          "Sampler_0/drdy_out",
+          "jb_p"
+        ]
+      },
       "Sampler_0_dwe_out": {
         "ports": [
           "Sampler_0/dwe_out",
@@ -219,7 +246,7 @@
       "Sampler_0_outputreg": {
         "ports": [
           "Sampler_0/outputreg",
-          "vga_g"
+          "xlslice_0/Din"
         ]
       },
       "clk_1": {
@@ -266,12 +293,6 @@
           "xadc_wiz_0/vp_in"
         ]
       },
-      "xadc_wiz_0_alarm_out": {
-        "ports": [
-          "xadc_wiz_0/alarm_out",
-          "Sampler_0/alarm_in"
-        ]
-      },
       "xadc_wiz_0_busy_out": {
         "ports": [
           "xadc_wiz_0/busy_out",
@@ -293,7 +314,6 @@
       "xadc_wiz_0_drdy_out": {
         "ports": [
           "xadc_wiz_0/drdy_out",
-          "jb_p",
           "Sampler_0/drdy_in"
         ]
       },
@@ -303,10 +323,10 @@
           "Sampler_0/eoc_in"
         ]
       },
-      "xadc_wiz_0_eos_out": {
+      "xlslice_0_Dout": {
         "ports": [
-          "xadc_wiz_0/eos_out",
-          "Sampler_0/eos_in"
+          "xlslice_0/Dout",
+          "vga_g"
         ]
       }
     }

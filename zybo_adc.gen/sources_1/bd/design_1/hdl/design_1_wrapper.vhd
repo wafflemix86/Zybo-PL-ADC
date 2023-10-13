@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Fri Oct  6 17:51:49 2023
+--Date        : Fri Oct 13 13:06:03 2023
 --Host        : DESKTOP-7RJTUE9 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
